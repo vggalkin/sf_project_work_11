@@ -1,0 +1,10 @@
+version: '3'
+services:
+    nginx:
+        image: nginx:latest
+        ports:
+            - "9889:80"
+        volumes:
+            - ./nginx:/etc/nginx/conf.d
+            - /var/lib/jenkins/workspace/project_work_11:/var/www
+            - ./logs/nginx:/var/log/nginx
