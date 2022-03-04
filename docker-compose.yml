@@ -5,6 +5,6 @@ services:
         ports:
             - "9889:80"
         volumes:
-            - ./nginx:/etc/nginx/conf.d
+            # - ./nginx:/etc/nginx/conf.d
             - /var/lib/jenkins/workspace/test/project_work_11:/var/www
             - ./logs/nginx:/var/log/nginx
