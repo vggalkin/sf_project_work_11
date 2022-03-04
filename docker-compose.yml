@@ -6,5 +6,5 @@ services:
             - "9889:80"
         volumes:
             - ./nginx:/etc/nginx/conf.d
-            - /var/lib/jenkins/workspace/project_work_11:/var/www
+            - /var/lib/jenkins/workspace/test:/var/www
             - ./logs/nginx:/var/log/nginx
